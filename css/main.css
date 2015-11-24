@@ -1,0 +1,67 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .header-font {
+	font-family: "Maven Pro", sans-serif;
+}
+
+#splash {
+	width: 100%;
+	text-align: center;
+	background-color: #F3F3F3;
+	margin: 0;
+	position: relative;
+}
+
+#splash h1 {
+	font-size: 5em;
+}
+
+#splash .head-text {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+}
+
+#splash .head-text img#main-logo {
+	width: 12em;
+	height: 12em;
+}
+
+#main-footer {
+	margin-top: 60px;
+}
+
+/* bootstrap replacement */
+
+.navbar {
+	height: 90px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.navbar-default {
+	background-color: #7B1FA2;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+	color: #FFFFFF;
+	font-size: 1.20em;
+}
+
+.navbar-default .navbar-brand {
+	font-size: 1.30em;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+	color: #FFFFFF;
+}

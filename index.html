@@ -3,10 +3,79 @@
 	<head>
 		<title>EasyCTF</title>
 		
+		<link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto|Open+Sans" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/lumen/bootstrap.min.css" rel="stylesheet" integrity="sha256-kBMbBs0vxJSlN7T3a7hOLllj53zib5nbF7rn4NAKy04= sha512-PwtEPLjYjtwEveJNXQTih2qsQhTg4tjgIy0gruouyKN5NLD4G4jh+mMrf7cA2s5PVI71UlS8DBYr1iqrN7ivBg==" crossorigin="anonymous"> -->
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
+		<div id="splash" class="head-section row">
+			<div class="head-text">
+				<img src="images/logo.png" id="main-logo" />
+				<h1>EasyCTF</h1>
+				<h2>High School Hacking Competition</h2>
+			</div>
+		</div>
 		
+		<nav class="navbar navbar-default" id="nav">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand header-font" href="/">EasyCTF</a>
+				</div>
+		
+				<div class="collapse navbar-collapse" id="main-navbar">
+					<ul class="nav navbar-nav">
+						<li><a href="#_about" data-scroll>About</a></li>
+						<li><a href="#_learn" data-scroll>Learn</a></li>
+						<li><a href="#_sponsor" data-scroll>Sponsor</a></li>
+						<li><a href="#_contact" data-scroll>Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="page-header" id="_about">
+				<h1>About</h1>
+			</div>
+			
+			<p>Lorem ipsum.</p>
+		</div>
+		<footer id="main-footer">
+			<div class="well" style="margin-bottom:0;padding:32px auto;">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<center>
+						<p>
+							<a href="http://facebook.com/easyctf" target="_blank" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Facebook"><span class="fa fa-facebook fa-fw"></span></a>
+							&nbsp;&nbsp;
+							<a href="http://twitter.com/easyctf" target="_blank" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Twitter"><span class="fa fa-twitter fa-fw"></span></a>
+							&nbsp;&nbsp;
+							<a href="http://github.com/easyctf" target="_blank" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Github"><span class="fa fa-github fa-fw"></span></a>
+						</p>
+						<p>
+							Made with <span style="color:red">&hearts;</span> by the EasyCTF Team. &copy; 2015.
+						</p>
+						<p>
+							EasyCTF is supported by its sponsors, including <a href="http://trailofbits.com" target="_blank">Trail of Bits</a>, an independent information security company that leverages its world-class experience in security research, red teaming and incident response to enable enterprises to make better strategic security decisions.  
+						</p>
+					</center>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function () {
+					$('[data-toggle="tooltip"]').tooltip();
+				});
+			</script>
+		</footer>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
