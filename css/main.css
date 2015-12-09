@@ -43,16 +43,36 @@ h1, h2, h3, h4, h5, h6, .header-font {
 	padding: 45px;
 }
 
+.section-header {
+	margin: 0 0;
+	text-align: center;
+	background-image: url(../images/triangles-dense.png);
+	background-size: cover;
+	background-color: rgba(76, 175, 80, 0.95);
+	padding: 30px;
+}
+
+.section-header h1 {
+	margin: 0;
+	font-weight: 700;
+	color: #FFF;
+}
+
+.spacer {
+	padding: 20px;
+}
+
 /* bootstrap replacement */
 
 .navbar {
 	height: 90px;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-bottom: 0 !important;
 }
 
 .navbar-default {
-	background-color: #7B1FA2;
+	background-color: rgba(123, 31, 162, 1);
 	border: none;
 	border-radius: 0;
 }
@@ -71,11 +91,32 @@ h1, h2, h3, h4, h5, h6, .header-font {
 	color: #FFFFFF;
 }
 
+#main-body .container {
+	padding-top: 15px;
+}
+
+.jumbotron {
+	background-image: url(../images/triangles-dense.png);
+	background-size: cover;
+}
+
 @media (min-width: 768px) {
 	.navbar .navbar-nav {
 		display: inline-block;
 		float: none;
 		vertical-align: top;
+	}
+	
+	.navbar .navbar-nav li {
+		margin: auto 5px;
+		border-radius: 5px;
+	}
+	
+	.navbar .navbar-nav li:hover {
+		transition: all .2s ease-out;
+		-moz-transition: all .2s ease-out;
+		-webkit-transition: all .2s ease-out;
+		background-color: rgba(255, 255, 255, 0.25);
 	}
 
 	.navbar .navbar-collapse {
