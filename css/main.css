@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans|Forum);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+@import url(bootstrap.min.css);
 
 html, body {
 	margin: 0;
@@ -75,8 +76,6 @@ h1, h2, h3, h4, h5, h6, .header-font {
 }
 
 .container {
-	max-width: 985px;
-	margin: auto;
 	padding: 150px 10px;
 	box-sizing: border-box;
 }
