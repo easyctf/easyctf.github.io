@@ -1,63 +1,60 @@
-<!doctype html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>EasyCTF</title>
-		<link rel="stylesheet" href="css/main.css" />
-	</head>
-	<body>
-		<div id="background"></div>
-		<div id="content">
-			<div id="container">
-				<div class="centered">
-					<img id="mainlogo" src="images/logo.png" title="New logo coming soon!" />
-					<h1 id="maintitle">EasyCTF</h1>
-					<h3 id="mainsubtitle">High School Hacking Competition</h3>
-				</div>
-				<p id="scroll"><a href="#main-content" data-scroll style="text-decoration:none;">scroll down for info</a></p>
-			</div>
-			<div class="container" id="main-content">
-				<h1>What is CTF?</h1>
-				<p>No, we're not running around in a gym, tagging other players. Capture the flag contests, or CTFs for short, are intense cybersecurity contests where participants try to capture a piece of information. To do this, they must use skills to capture a virtual flag, usually taking the form of a string, like this: flag{this_is_a_flag}.</p>
-				<p>EasyCTF is a CTF that's tailored for the high school level. Started by high school students, it was created with a passion for learning. We reach out to students and teachers all over the country in order to share our love for computer science for everyone.</p>
-				<p>There are two common types of CTF competitions: jeopardy, and attack-defense. In a jeopardy-style CTF like EasyCTF, participants are tested on their security skills in the form of web, binary exploitation, forensics, cryptography, and reverse-engineering challenges. In EasyCTF, we also have an additional category, Programming, for people who aren't quite ready to dive into the deep end of the pool yet.</p>
+---
+layout: default
+---
 
-				<h2>How can I prepare?</h2>
-				<p>The best way to get better at CTFs is to play more CTFs! Make sure you read the writeups (solutions) for the problems you didn't solve, after the CTF is over. You can find writeups for many past CTFs at these <a href="https://github.com/ctfs" target="_blank">Github repos</a>.</p>
-				<p>You can also find a helpful schedule of upcoming CTFs (on the high school level) at our <a href="http://calendar.easyctf.com" target="_blank">calendar</a>.
-
-				<h1>Events</h1>
-				<p>EasyCTF is held every year at the end of the year, around November to December. This year, it will be held from <b>November 26</b> to <b>December 3</b>, 2016. Mark that week on your calendar!</p>
-				<p>Unfortunately, the 2015 site has been removed until further notice. Participants who wish to try the problems from this year are encouraged to try them <a href="https://github.com/ctfs/write-ups-2015/tree/master/easyctf-2015" target="_blank">here</a> instead. The shell and programming judge will probably not be revived.</p>
-
-				<h1>Sponsorship</h1>
-				<p>We'd love to work with you! If you're a school or a company that's interested in working with EasyCTF, shoot us an email!</p>
-
-				<h1>Contact</h1>
-				<p>The EasyCTF team consists of students around the nation. The best way to reach us is through our public Slack! You can click the button below to request an invitation. Otherwise, you may just email us at <a href="mailto:team@easyctf.com" target="_blank">team@easyctf.com</a>.</p>
-				<center id="links">
-					<!-- <p><script async defer src="https://slack.easyctf.com/slackin.js"></script></p> not working properly -->
-					<a href="mailto:team@easyctf.com" target="_blank"><i class="fa fa-fw fa-2x fa-envelope"></i></a>
-					<a href="https://facebook.com/easyctf" target="_blank"><i class="fa fa-fw fa-2x fa-facebook-square"></i></a>
-					<a href="https://twitter.com/easyctf" target="_blank"><i class="fa fa-fw fa-2x fa-twitter"></i></a>
-					<a href="https://github.com/easyctf" target="_blank"><i class="fa fa-fw fa-2x fa-github"></i></a>
-					<a href="https://slack.easyctf.com" target="_blank"><i class="fa fa-fw fa-2x fa-slack"></i></a>
-					<a href="https://blog.easyctf.com" target="_blank"><i class="fa fa-fw fa-2x fa-rss-square"></i></a>
-				</center>
-			</div>
+<div id="background">
+	<div class="container">
+		<div id="content" class="centered">
+			<img id="mainlogo" src="images/logo.svg" title="New logo coming soon!" />
+			<h1 id="maintitle">EasyCTF</h1>
+			<h4 id="mainsubtitle">High School Hacking Competition</h4>
+			<p style="margin-top: 80px;">
+				<a href="/about" class="btn btn-lg btn-primary">Learn More &raquo;</a>
+			</p>
 		</div>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/10.0.0/js/smooth-scroll.min.js" integrity="sha384-3dMfZDuVA1qMXUkMmwryOt5CLArMPQL9eUMfDWNT2s2HuiNLvMNXhZOIdkTOnrw4" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha384-d+UOwmNNIC7V4izkTAKSXzWhjC2GxiS9PTykO1XdOPC3nc2z65UOS7SP6QdKPA70" crossorigin="anonymous"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				particlesJS.load("background", "js/particles.json");
-				smoothScroll.init({
-					speed: 480,
-					easing: "easeInOutCubic",
-					updateURL: false
-				});
-			});
-		</script>
-	</body>
-</html>
+	</div>
+</div>
+<div class="container">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eleifend porttitor velit quis facilisis. Nulla facilisi. Nam pulvinar accumsan convallis. Suspendisse enim est, hendrerit non lobortis quis, ullamcorper vel nunc. Proin quis varius tortor. Vivamus tempus lacus vel risus ornare, in tempus odio lobortis. Nam faucibus sodales ipsum, elementum sodales dolor maximus nec. In molestie magna a dolor tempor vehicula. Mauris eu est sagittis nisi ornare finibus. Nulla consectetur, enim at sollicitudin finibus, nisi risus semper libero, consectetur vestibulum velit nisi non dui. Proin tristique tellus eros, non interdum risus mollis pulvinar. Fusce a velit felis. Aenean ornare dui nec diam ultrices, ac gravida erat sodales. Fusce ullamcorper purus ut hendrerit fringilla.
+</p><p>
+Curabitur tortor felis, vulputate lobortis suscipit ut, iaculis ut ex. Vestibulum consectetur commodo rutrum. Cras pellentesque diam a leo tempor, a vulputate tortor semper. Nulla non imperdiet risus. Sed fringilla est vitae nulla laoreet molestie. Duis diam eros, tempor quis mi et, sodales mattis quam. Aliquam rutrum dignissim tincidunt. Aenean sed gravida ante. Morbi enim tortor, fermentum et odio et, lacinia bibendum justo. Morbi cursus vitae libero eu vulputate. Duis convallis justo non turpis suscipit facilisis. Vestibulum nisl nulla, sagittis nec metus at, gravida congue ipsum. Aliquam vitae dolor faucibus, finibus ligula eget, consequat neque. Duis nulla tortor, congue id nisi et, condimentum porttitor sem.
+</p><p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum lorem quis nisl tincidunt, quis pellentesque est suscipit. Donec tortor est, sollicitudin sit amet dui non, auctor rhoncus ante. Suspendisse eget ornare dui, aliquam fringilla enim. Pellentesque ut massa mattis, sagittis dolor eu, aliquam turpis. Vestibulum finibus purus eget turpis congue iaculis. In pulvinar risus eu lacus tristique, non gravida mauris dictum. Duis non vulputate velit, id convallis tellus. Pellentesque id risus sed purus feugiat interdum nec ac ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+</p><p>
+Pellentesque elementum luctus posuere. Nullam varius cursus fermentum. Aenean tincidunt a erat ac bibendum. Fusce mattis nibh enim, nec sodales mauris sodales id. Etiam a ipsum varius, convallis ante sed, maximus tellus. Aenean mollis odio sit amet maximus scelerisque. Suspendisse vel velit tortor. Nam condimentum tempor felis, non gravida felis scelerisque et.
+</p><p>
+Vivamus dui quam, fermentum a augue in, mollis rhoncus quam. Aliquam erat volutpat. Proin vitae risus ac enim luctus scelerisque. Proin dolor eros, hendrerit a orci vel, accumsan ornare lacus. Pellentesque interdum consequat volutpat. Nulla euismod augue at quam cursus convallis. In scelerisque tellus non dolor blandit, vitae porttitor est faucibus.
+	</p>
+</div>
+<div style="background-color: #359; color: #FFF; margin-top: 80px; padding: 40px;">
+	<div class="container">
+		<center>
+			<form class="form-horizontal" style="width: 65%;">
+				<p>Get email updates!</p>
+				<div class="input-group">
+					<input type="text" class="form-control input-lg" placeholder="you@example.com" name="email" autocomplete="off" />
+					<span class="input-group-btn">
+						<input type="submit" class="btn btn-lg btn-success" value="Subscribe" />
+					</span>
+				</div>
+			</form>
+		</center>
+	</div>
+</div>
+<script type="text/javascript">
+	var intval;
+	$(document).ready(function() {
+		// particlesJS.load("background", "js/particles.json");
+		var x = 0;
+		intval = setInterval(function(){
+			x -= 0.25;
+			$("#background").css('background-position', x + 'px 0');
+		}, 10);
+		smoothScroll.init({
+			speed: 480,
+			easing: "easeInOutCubic",
+			updateURL: false
+		});
+	});
+</script>
