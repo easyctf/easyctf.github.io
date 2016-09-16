@@ -8,20 +8,20 @@ html, body {
 	font-family: "Open Sans", sans-serif;
 	width: 100%;
 	height: 100%;
-	color: #FFF;
+	color: #478ecc;
 }
 
 a {
-	color: #FFF;
+	color: #478ecc;
 }
 
 *::selection {
-	background-color: #0C6;
+	background-color: #478ecc;
 	color: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6, .header-font {
-	font-family: "Forum", sans-serif;
+	font-family: sans-serif;
 }
 
 #background {
