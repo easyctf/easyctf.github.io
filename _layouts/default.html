@@ -2,12 +2,20 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>EasyCTF</title>
+		{% if page.indexing == false %}<meta name="robots" content="noindex">{% endif %}
+		<title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
 		<link rel="icon" href="/images/logo.png" />
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link rel="stylesheet" href="/css/main.css" />
+		{% for style in page.styles %}
+			<link rel="stylesheet" href="{{ style }}" />
+		{% endfor %}
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js" integrity="sha384-K+ctZQ+LL8q6tP7I94W+qzQsfRV2a+AfHIi9k8z8l9ggpc8X+Ytst4yBo/hH+8Fk" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		{% for script in page.scripts %}
+			<script src="{{ script }}"></script>
+		{% endfor %}
 	</head>
 	<body>
 		<div id="navbar-container">
@@ -35,7 +43,7 @@
 
 				<div class="collapse navbar-collapse" id="main-navbar">
 					<ul class="nav nav-justified">
-						<li class="dropdown">
+						<li class="dropdown left_link">
 							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-info-circle fa-fw"></i> About <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li id="link_about"><a href="/about"><i class="fa fa-info-circle fa-fw"></i> About</a></li>
@@ -43,8 +51,8 @@
 								<li id="link_rules"><a href="/rules"><i class="fa fa-trophy fa-fw"></i> Rules and Prizes</a></li>
 							</ul>
 						</li>
-						<li id="link_learn"><a href="/learn"><i class="fa fa-bars fa-fw"></i> Learn</a></li>
-						<li class="dropdown">
+						<li id="link_learn" class="left_link"><a href="/learn"><i class="fa fa-bars fa-fw"></i> Learn</a></li>
+						<li class="dropdown middle_link">
 							<a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 								<img src="/images/logo.png" width="24" height="24" style="display:inline-block;" />&nbsp;EasyCTF 2016 <span class="caret"></span>
 							</a>
@@ -60,8 +68,8 @@
 								</a></li>
 							</ul>
 						</li>
-						<li id="link_scoreboard"><a href="/scoreboard"><i class="fa fa-bars fa-fw"></i> Scoreboard</a></li>
-						<li id="link_writeups"><a href="http://writeups.easyctf.com"><i class="fa fa-pencil-square-o fa-fw"></i> Writeups</a></li>
+						<li id="link_scoreboard" class="right_link"><a href="/scoreboard"><i class="fa fa-bars fa-fw"></i> Scoreboard</a></li>
+						<li id="link_writeups" class="right_link"><a href="http://writeups.easyctf.com"><i class="fa fa-pencil-square-o fa-fw"></i> Writeups</a></li>
 					</ul>
 				</div>
 			</nav>

@@ -1,0 +1,32 @@
+#main-navbar {
+	> .nav {
+		li, .open {
+			> a {
+				background-color: transparent;
+			}
+		}
+	}
+	> .nav-justified {
+		> li {
+			padding: 6px;
+			margin: auto;
+			width: 10%;
+			background-color: lighten(@brand-primary, 10%);
+			border: 0;
+			> a {
+				background-color: transparent;
+				padding: 6px;
+				color: #000;
+			}
+		}
+		> li.left_link {
+			.clip-path(polygon(0% 10%, 95% 10%, 100% 90%, 5% 90%));
+		}
+		> li.middle_link {
+			.clip-path(polygon(0 0, 100% 0, 95% 100%, 5% 100%));
+		}
+		> li.right_link {
+			.clip-path(polygon(5% 10%, 100% 10%, 95% 90%, 0% 90%));
+		}
+	}
+}
