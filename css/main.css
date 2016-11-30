@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans|Forum);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300|Forum);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
 @import url(bootstrap.min.css);
 
@@ -6,6 +6,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 	width: 100%;
 	height: 100%;
 	color: #478ecc;
@@ -21,7 +22,8 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6, .header-font {
-	font-family: sans-serif;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 300;
 }
 
 #background {
