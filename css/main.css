@@ -1,8 +1,13 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400|Forum);
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400|Forum);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 html, body {
-	font-family: "Open Sans";
+	font-family: "Lato";
+	font-weight: 300 !important;
+}
+
+form * {
+	font-family: "Lato";
 	font-weight: 300 !important;
 }
 
@@ -22,15 +27,15 @@ h1, h2, h3, h4, h5, h6, .btn {
 }
 
 .section {
-	padding: 40px 0 60px 0;
+	padding: 40px 0 40px 0;
 }
 
 .gradient {
 	color: #FFF;
-	background: #695bbf;
-	background: -moz-linear-gradient(45deg,  #695bbf 0%, #c631ab 100%);
-	background: -webkit-linear-gradient(45deg,  #695bbf 0%,#c631ab 100%);
-	background: linear-gradient(45deg,  #695bbf 0%,#c631ab 100%);
+	background: #31abc6;
+	background: -moz-linear-gradient(45deg,  #31abc6 0%, #5b69bf 100%);
+	background: -webkit-linear-gradient(45deg,  #31abc6 0%,#5b69bf 100%);
+	background: linear-gradient(45deg,  #31abc6 0%,#5b69bf 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#695bbf', endColorstr='#c631ab',GradientType=1 );
 }
 
@@ -88,4 +93,8 @@ h1, h2, h3, h4, h5, h6, .btn {
 
 .site-footer h5, .site-footer .h5 {
 	font-size: 1.2em;
+}
+
+*::selection {
+	background-color: #CCE2FF;
 }

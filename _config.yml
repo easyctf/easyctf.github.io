@@ -1,2 +1,43 @@
-title: EasyCTF 2017
+title: EasyCTF IV
 description: EasyCTF is a national, online, student-run high school hacking competition that opens the door to computer science and cybersecurity for students all over the world.
+team:
+  -
+    username: mzhang
+    avatar: https://avatars1.githubusercontent.com/u/1700346?v=3
+    name: Michael Zhang
+    role: Project Leader
+    website: https://mzhang.me
+    twitter: failedxyz
+  -
+    username: chaosagent
+    role: Web Developer
+  -
+    username: james9909
+    role: Web Developer
+  -
+    username: blockingthesky
+    role: Sponsorship & Outreach
+  -
+    username: neptunia
+    role: Problem Writer
+  -
+    username: r3ndom
+    role: Problem Writer
+  -
+    username: nicebowlofsoup
+    role: Problem Writer
+  -
+    username: wiresboy
+    role: Problem Writer
+  -
+    username: GenericNickname
+    role: Problem Writer
+  -
+    username: sso999
+    role: Problem Writer
+  -
+    username: dududum561
+    role: Problem Writer
+  -
+    username: ztaylor54
+    role: Lurker
